@@ -1,0 +1,54 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'cordel';
+    src: url('fonte/Cordel\ Encarnado.otf') format('opentype');
+    font-weight: normal;
+}
+
+:root {
+    --cor0: #efedcb;
+    --cor1: #0c0c0a;
+
+    --fonte-padrao: arial, verdana, helvetica, 'sans-serif';
+    --fonte-cordel: 'cordel', cursive;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-color: var(--cor0);
+    font-family: var(--fonte-padrao);
+}
+
+header {
+    background-color: var(--cor1);
+    text-align: center;
+    padding: 30px;
+}
+
+header h1 {
+    font-family: var(--fonte-cordel);
+    font-size: 5em;
+    color: var(--cor0);
+    margin-bottom: 20px;
+}
+
+header p > a {
+    text-decoration: none;
+    color: var(--cor0);  
+}
+
+header p > a:hover {
+    text-decoration: underline;
+}
+
+main {
+    font-family: var(--fonte-cordel);
+    font-size: 2em;
+    /* line-height: 1.5; */
+    padding: 0px 30px;
+}
