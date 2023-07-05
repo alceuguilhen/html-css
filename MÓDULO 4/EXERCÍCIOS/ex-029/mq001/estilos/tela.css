@@ -1,0 +1,72 @@
+@charset "UTF-8";
+
+/* Estilo para telas */
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+html {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+}
+
+header {
+    background-color: cadetblue;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 3em;
+    color: rgb(233, 233, 233);
+    padding: 20px 0px;
+}
+
+header li {
+    display: inline-block;
+    margin: auto;
+    padding: 0px 30px;
+}
+
+menu {
+    background-color: rgb(39, 64, 65);
+    color: white;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+menu ul {
+    list-style-type: none;
+}
+
+article {
+    background-color: rgb(172, 177, 177);
+    display: block;
+    margin: auto;
+    margin-bottom: 10px;
+    padding: 20px;
+    border-radius: 0px 0px 20px 20px;
+    max-width: 80vw;
+}
+
+article h2 {
+    color:  rgb(39, 64, 65);
+    margin-bottom: 10px;
+}
+
+article p {
+    margin-bottom: 10px;
+    text-align: justify;
+}
+
+footer {
+    background-color: cadetblue;
+    color: rgb(39, 64, 65);
+    text-align: center;
+    padding: 10px;
+}
