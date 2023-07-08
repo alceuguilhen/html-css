@@ -5,11 +5,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Media Query</title>
     <link rel="stylesheet" href="estilos/style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
 </head>
 <body>
     <header>
-        <h1>O ouvidor</h1>
-        <menu>
+    <!-- Para criar o menu interativo estilo gaveta, na tag do ícone coloque a propriedade onclick="clickMenu(). Despois abra uma tag <script> e escreva o seguinte código:
+        <script>
+            function clickMenu() {
+                if (itens.style.display == 'block') {
+                    itens.style.display = 'none'
+                } else {
+                    itens.style.display = 'block'
+                }
+            }
+        </script>.
+    "-->
+        <h1>O OUVIDOR</h1>
+        <span id="burguer" class="material-icons" onclick="clickMenu()">menu</span>
+        <menu id="itens">
             <ul>
                 <li><a href="#">Home</a></li>
                 <li><a href="#">Política</a></li>
@@ -38,5 +52,14 @@
             Site desenvolvido por <strong><a href="https://github.com/alceuguilhen" target="_blank">Alceu Guilhen</a></strong>
         </p>
     </footer>
+    <script>
+        function clickMenu() {
+            if (itens.style.display == 'block') {
+                itens.style.display = 'none'
+            } else {
+                itens.style.display = 'block'
+            }
+        }
+    </script>
 </body>
 </html>
